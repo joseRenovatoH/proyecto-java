@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/0301993a4a.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="estilos.css">
+    <title>Portafolio Jose Renovato</title>
+</head>
+<body>
+    <!--codigo de contenedor general-->
+    <div class="contenedor">
+        <!--codigo de header o cabeza de pagina-->
+        <header>
+            <div class="logo">
+                <h1>Jose Antonio Renovato Hiedra</h1>
+                <p>Desarrollador web</p>
+            </div>
+            <form action="">
+                <input type="text" class="barra-busqueda" id="barra-busqueda" placeholder="Buscar">
+            </form>
+            <div class="categorias" id="categorias">
+                <a href="#" class="activo">Todos</a>
+                <a href="#">Sagitario</a>
+                <a href="#">Geminis</a>
+                <a href="#">Picis</a>
+                <a href="#">Libra</a>
+            </div>
+        </header>
+        <!--codigo de grid o espacio para contenido-->
+        <section class="grid" id="grid">
+            <div class="item" 
+            data-categoria="aries" 
+            data-etiquetas="aries"
+            data-descripcion="1.-Caballero dorado de aries"
+            >
+                <div class="item-contenido">
+                    <img src="img/m1.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="picis" 
+            data-etiquetas="picis"
+            data-descripcion="2.-Caballero dorado de picis"
+            >
+                <div class="item-contenido">
+                    <img src="img/m2.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="capricornio" 
+            data-etiquetas="capricornio"
+            data-descripcion="3.-Caballero dorado de capricornio"
+            >
+                <div class="item-contenido">
+                    <img src="img/m3.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="sagitario" 
+            data-etiquetas="sagitario"
+            data-descripcion="4.-Caballero dorado de sagitario"
+            >
+                <div class="item-contenido">
+                    <img src="img/m4.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="escorpio" 
+            data-etiquetas="escorpio"
+            data-descripcion="5.-Caballero dorado de escorpio"
+            >
+                <div class="item-contenido">
+                    <img src="img/m5.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="libra" 
+            data-etiquetas="libra"
+            data-descripcion="6.-Caballero dorado de libra"
+            >
+                <div class="item-contenido">
+                    <img src="img/m6.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="geminis" 
+            data-etiquetas="geminis"
+            data-descripcion="7.-Caballero dorado de geminis"
+            >
+                <div class="item-contenido">
+                    <img src="img/m7.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="cancer" 
+            data-etiquetas="cancer"
+            data-descripcion="8.-Caballero dorado de cancer"
+            >
+                <div class="item-contenido">
+                    <img src="img/m8.jpg" alt="">
+                </div>
+            </div>
+            <div class="item" 
+            data-categoria="virgo" 
+            data-etiquetas="virgo"
+            data-descripcion="9.-Caballero dorado de virgo"
+            >
+                <div class="item-contenido">
+                    <img src="img/m9.jpg" alt="">
+                </div>
+            </div>
+        </section>
+        <!--codigo de overlay o contenido frontal al dar clic en una imagen-->
+        <section class="overlay" id="overlay">
+            <div class="contenedor-img">
+                <button id="cerrar-popop"><i class="fas fa-times"></i></button>
+                <img src="" alt="">
+            </div>
+            <p class="descripcion"></p>
+        </section>
+        <!--codigo de footer o pie de pagina-->
+        <footer class="contenedor">
+            <div class="redes-sociales">
+                <div class="contenedor-icono">
+                    <a href="https://www.facebook.com/joseantonio.renovatohiedra.7" target="_blank" class="facebook">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://www.instagram.com/renovatohiedra/?hl=es-la" target="_blank" class="instagram">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+                </div>
+                <div class="contenedor-icono">
+                    <a href="https://github.com/joseRenovatoH" target="_blank" class="github">
+                        <i class="fab fa-github"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="creado-por">
+                <p>Sitio diseñado por Jose Antonio Renovato Hiedra</p>
+            </div>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/web-animations-js@2.3.2/web-animations.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/muuri@0.9.5/dist/muuri.min.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
